@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Project 3</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="icon" type="image/png" href="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.ico">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Application Project 3 Content -->
+    <section class="project-overview" style="padding-top: 100px;">
+        <div class="main-text">
+            <h2 class="heading" style="margin-top: 0;">SurveySync App</h2>
+            <span>Survey Management Platform (Java EE)</span>
+        </div>
+        <div class="project-description">
+            <p>SurveySync is a survey management application built using Java EE that allows users to create, manage, and analyze surveys efficiently. It is designed for organizations to gather feedback from customers, employees, and various other stakeholders. The app includes features like customizable survey templates, real-time data analytics, and export options for survey results. Built with a robust Java EE backend, SurveySync ensures scalability and security while offering a smooth user experience for both administrators and survey participants.</p>
+        </div>
+    </section>
+
+    <!-- Images Section -->
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="surveysync-1.jpeg" alt="SurveySync App Image 1">
+        </div>
+        <div class="image-item">
+            <img src="surveysync-2.jpeg" alt="SurveySync App Image 2">
+        </div>
+        <div class="image-item">
+            <img src="surveysync-3.jpeg" alt="SurveySync App Image 3">
+        </div>
+    </div>
+
+    <!-- GitHub Link Section -->
+    <div class="github-link" style="margin: 10px 0;">
+        <a href="https://github.com/Ayandakweyama/SurveySyncApp" target="_blank" class="btn">
+            <div class="bg-icon"></div>
+            View on GitHub
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Toggle Menu -->
+    <script>
+        // Get the menu icon and the navigation list
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        // Toggle the active class to show/hide the menu
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active'); // Show or hide the menu
+            menuIcon.classList.toggle('active'); // Animate the menu icon
+        });
+    </script>
+
+</body>
+</html>

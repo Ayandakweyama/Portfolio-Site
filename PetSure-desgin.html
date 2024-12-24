@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Design Showcase 1</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your global CSS file -->
+    <!-- Boxicons for Icons (Optional, remove if unused) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+    <style>
+        /* Figma Design Content */
+        .design-showcase .design-preview img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .design-showcase .design-preview img {
+                max-width: 80%; /* Reduces the image size on mobile */
+                margin: 0 auto;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+        <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a class="active" href="#">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+
+    <!-- Figma Design Content -->
+    <section class="design-showcase">
+        <div class="content">
+            <h1 class="heading"style="padding-top: 100px;">Project Title</h1>
+            <p class="description">
+                This project showcases a modern and user-friendly design created in Figma. The design focuses on enhancing user experience while maintaining a clean and visually appealing interface. Click the button below to explore the full interactive prototype on Figma.
+            </p>
+        </div>
+
+        <!-- Figma Design Thumbnail -->
+        <div class="design-preview">
+            <img src="Pet care 1.jpg" alt="Figma Design Preview">
+        </div>
+
+        <!-- View Design Button -->
+        <div class="view-design">
+            <a href="https://www.figma.com/design/cRVhvBhjB6IlKKeOeWkL1G/Untitled?m=auto&t=seQlkBDDxfC395Ka-1" target="_blank" class="btn">
+                <i class="bx bxl-figma"></i> View Design on Figma
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a class="active" href="#">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="main-text">
+            <h2 class="heading" style="padding-top:70px">Web Development Projects</h2>
+            <span>Websites and Web Applications</span>
+        </div>
+
+        <div class="portfolio-gallery">
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>Personal Profile Site</h3>
+                    <p>A site for recruiters to see my compitence of differemt techmologies in both Progamming and design.  </p>
+                </div>
+                <div class="portfolio-img">
+                    <img src="highAchivers logo main.jpeg" alt="Web Project 1">
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>Project 2</h3>
+                    <p>Personal portfolio website.</p>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/web2.jpg" alt="Web Project 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Navbar Toggle Script -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

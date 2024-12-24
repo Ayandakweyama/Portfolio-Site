@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="main-text">
+            <h2 class="heading" style="padding-top: 70px";>Application Development</h2>
+            <span>Technology and creativity meeting to solve everyday problems</span>
+        </div>
+
+        <div class="portfolio-gallery">
+            <!-- Project 1-->
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>E-commerce Store</h3>
+                    <p>Merch store for the University of Mpumalanga </p>
+                    <a href="App-project 1.html" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="nobg UMP merch.png" style="width: 100%; height: 120%; object-fit: cover; object-position: center;" alt="UMP Merch">
+                </div>
+            </div>
+
+            <!-- Project 2-->
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>Survey Sync</h3>
+                    <p>A platform where you create and share surveys alongside extracting data</p>
+                    <a href="App-project 2.html" class="readMore" style="display: inline-block; font-size: 14px; padding: 10px 28px 10px; color: #ffffff; text-transform: uppercase; font-weight: 700; background: red; letter-spacing: 2px; border-style: none;">Page is Under Construction</a>
+
+                </div>
+                <div class="portfolio-img">
+                    <img src="surveysync nobg.png" alt="Survey Sync Project">
+                </div>
+            </div>
+
+            <!-- Project 3-->
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>PetSure PetCare App</h3>
+                    <p>PetCare that helps manage the grooming and feeding routine of your pet.</p>
+                    <a href="App-project 3.html" class="readMore" style="display: inline-block; font-size: 14px; padding: 10px 28px 10px; color: #ffffff; text-transform: uppercase; font-weight: 700; background: red; letter-spacing: 2px; border-style: none;">Page is Under Construction</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="Petsurelogo.png" style="width: 100%; height: 120%; object-fit: cover; object-position: center;" alt="PetSure Project">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Navbar Toggle Script -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

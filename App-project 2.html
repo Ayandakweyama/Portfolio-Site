@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Project 2</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="icon" type="image/png" href="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.ico">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Application Project 2 Content -->
+    <section class="project-overview" style="padding-top: 100px;">
+        <div class="main-text">
+            <h2 class="heading" style="margin-top: 0;">PetSure Petcare App</h2>
+            <span>Comprehensive Mobile Application</span>
+        </div>
+        <div class="project-description">
+            <p>The PetSure Petcare App is a comprehensive mobile application designed for pet owners to manage their pet's health and wellness needs effectively. The app provides features such as vaccination schedules, appointment bookings with veterinarians, pet health tracking, and reminders for medication. Developed using Jetpack Compose (Android Studio), the app ensures a modern and intuitive user interface. The project focuses on delivering a seamless experience for users, combining accessibility and robust functionality.</p>
+        </div>
+    </section>
+
+    <!-- Images Section -->
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="petsure-1.jpeg" alt="PetSure App Image 1">
+        </div>
+        <div class="image-item">
+            <img src="petsure-2.jpeg" alt="PetSure App Image 2">
+        </div>
+        <div class="image-item">
+            <img src="petsure-3.jpeg" alt="PetSure App Image 3">
+        </div>
+    </div>
+
+    <!-- GitHub Link Section -->
+    <div class="github-link" style="margin: 10px 0;">
+        <a href="https://github.com/Ayandakweyama/PetSureApp" target="_blank" class="btn">
+            <div class="bg-icon"></div>
+            View on GitHub
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Toggle Menu -->
+    <script>
+        // Get the menu icon and the navigation list
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        // Toggle the active class to show/hide the menu
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active'); // Show or hide the menu
+            menuIcon.classList.toggle('active'); // Animate the menu icon
+        });
+    </script>
+
+</body>
+</html>

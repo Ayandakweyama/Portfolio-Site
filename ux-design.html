@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ux-Ui design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a class="active" href="#">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="main-text">
+            <h2 class="heading" style="padding-top: 70px;">UX-UI Design Projects</h2>
+            <span>Creative Visual Designs done using Figma on the following</span>
+        </div>
+
+        <div class="portfolio-gallery">
+            <!-- Project 1 -->
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>PetSure Petcare App</h3>
+                    <p>App design of the PetSure app where the app was built using Jetpack Compose (Android Studio).</p>
+                    <a href="PetSure-desgin.html" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="Petsurelogo.png" alt="Logo Design Project">
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-box">
+                <div class="portfolio-content">
+                    <h3>UMP Food ordering design</h3>
+                    <p>Created a design structure and tone that a group used for their assigment, alongside providing a creative direction i also assisted with protyping</p>
+                    <a href="food-ordering.html" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="10 year.jpeg" alt="Social Media Campaign Project">
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Navbar Toggle Script -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

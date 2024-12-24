@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Ayanda Kweyama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.ico">
+    <style>
+        /* Animation for the menu */
+        .navlist {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            transition: transform 0.3s ease-in-out; /* Smooth transition for menu */
+            transform: translateX(100%); /* Initially hide the menu off the screen */
+        }
+        .navlist.active {
+            transform: translateX(0); /* Slide the menu into view */
+        }
+
+        /* Mobile menu icon */
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .menu-icon .bar {
+            height: 4px;
+            background-color: #323753;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Change the appearance of the bars when the menu is active */
+        .menu-icon.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-icon.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-icon.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+<body>
+ <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="heading" style="padding-top: 100px;">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>Feel free to use the options below to reach out for employment opportunities, projects, collaborations, or inquiries.</p>
+
+            <div class="contact-options">
+                <!-- Email Contact -->
+                <div class="contact-item">
+                    <h3>Email Me</h3>
+                    <p>Click below to copy my email address:</p>
+                    <button id="copy-email" class="btn">Copy Email Address <i class='bx bx-envelope'></i></button>
+                    <span id="email-feedback" class="feedback"></span>
+                </div>
+                <!-- Phone Contact -->
+                <div class="contact-item">
+                    <h3>Call or Text Me via WhatsApp</h3>
+                    <p>Click below to copy my phone number:</p>
+                    <button id="copy-phone" class="btn">Copy Phone Number <i class='bx bx-copy'></i></button>
+                    <span id="phone-feedback" class="feedback"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Copy Email Functionality
+        const emailButton = document.getElementById('copy-email');
+        const emailFeedback = document.getElementById('email-feedback');
+        emailButton.addEventListener('click', () => {
+            navigator.clipboard.writeText('ayandakweyamavezi5@gmail.com').then(() => {
+                emailFeedback.textContent = 'Email address copied!';
+                emailFeedback.style.color = 'green';
+                setTimeout(() => emailFeedback.textContent = '', 2000);
+            }).catch(() => {
+                emailFeedback.textContent = 'Failed to copy email address.';
+                emailFeedback.style.color = 'red';
+            });
+        });
+
+        // Copy Phone Number Functionality
+        const phoneButton = document.getElementById('copy-phone');
+        const phoneFeedback = document.getElementById('phone-feedback');
+        phoneButton.addEventListener('click', () => {
+            navigator.clipboard.writeText('+27 69 132 7681').then(() => {
+                phoneFeedback.textContent = 'Phone number copied!';
+                phoneFeedback.style.color = 'green';
+                setTimeout(() => phoneFeedback.textContent = '', 2000);
+            }).catch(() => {
+                phoneFeedback.textContent = 'Failed to copy phone number.';
+                phoneFeedback.style.color = 'red';
+            });
+        });
+
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menuIcon.classList.toggle('active'); // Add animation to menu icon
+        });
+    </script>
+</body>
+</html>

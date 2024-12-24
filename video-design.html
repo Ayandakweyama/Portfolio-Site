@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS -->
+     <style>
+        /* Animation for the menu */
+        .navlist {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            transition: transform 0.3s ease-in-out; /* Smooth transition for menu */
+            transform: translateX(100%); /* Initially hide the menu off the screen */
+        }
+        .navlist.active {
+            transform: translateX(0); /* Slide the menu into view */
+        }
+
+        /* Mobile menu icon */
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .menu-icon .bar {
+            height: 4px;
+            background-color: #323753;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Change the appearance of the bars when the menu is active */
+        .menu-icon.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-icon.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-icon.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Navbar -->
+        <div class="menu-icon" onclick="toggleMenu()"> <!-- Added menu icon for mobile -->
+            <div class="bar"></div>
+        </div>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+    </header>
+
+    <!-- Video Page Content -->
+    <section class="video-section">
+        <div class="content">
+            <h1 class="heading">Marketing video for UMP merch</h1>
+            <p class="description">
+                Video was made as a marketing video for UMP merch, part of my final Project Presentation of a system I built.
+            </p>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="video-container">
+            <iframe width="100%" height="500px" src="UMP merch promo vid.mp4" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript for Navbar Animation -->
+    <script>
+        function toggleMenu() {
+            const navList = document.querySelector('.navlist');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
