@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Gallery</title>
+    <!-- Swiper CSS (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css"> <!-- Link your existing CSS -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="HIGH_ACHIVERS_LOGO_3-1-removebg-preview.png" alt="Logo">
+        </a>
+        <!-- Menu List -->
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="app-dev.html">App Development</a></li>
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="ux-design.html">UX Design</a></li>
+            <li><a href="g-design.html">Graphic Design</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Project Overview Section -->
+    <section class="project-overview" style="padding-top:70px">
+        <div class="main-text">
+            <h2 class="heading">Logos</h2>
+            <span>A snippet into some logos Ive done in 2024</span>
+        </div>
+        <div class="project-description">
+            <p>
+                This gallery showcases a collection of logo designs that reflect creativity, simplicity, and purpose. Each logo is crafted to align with the brand identity, ensuring visual appeal and meaningful representation.            </p>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section with Swiper Carousel -->
+    <section class="project-gallery">
+        <div class="gallery-heading">
+            <h2>Project Gallery</h2>
+            <p>Explore images of this project below</p>
+        </div>
+
+    <!-- Swiper Container -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="Calvin momo logo.jpeg" alt="Project Image 1">
+            <div class="slide-caption">
+                <p>Calvin Momo Logo - A minimal and modern design.</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="highAchivers logo main .jpeg" alt="Project Image 2">
+            <div class="slide-caption">
+                <p>High Achievers Logo - Empowering excellence.</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="Amablooms logo.jpeg" alt="Project Image 3">
+            <div class="slide-caption">
+                <p>Amablooms Logo - Nature-inspired branding.</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="umpahabazo.jpeg" alt="Project Image 4">
+            <div class="slide-caption">
+                <p>Umphabazo logo-A kasi Fast Food Spot.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination and Navigation Buttons -->
+    <div class="swiper-pagination"></div> <!-- Pagination dots -->
+    <div class="swiper-button-next"></div> <!-- Next button -->
+    <div class="swiper-button-prev"></div> <!-- Previous button -->
+</div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright © 2024 by Ayanda Kweyama || All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper JS (CDN) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS to Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            loop: true, /* Infinite looping */
+            autoplay: {
+                delay: 3000, /* Auto-play every 3 seconds */
+                disableOnInteraction: false, /* Keeps autoplay running */
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true, /* Allows clicking on pagination dots */
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            effect: "coverflow", /* Adds a cool 3D effect */
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+        });
+    </script>
+   <script>
+        // Get the menu icon and the navigation list
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('.navlist');
+
+        // Toggle the active class to show/hide the menu
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('active'); // Show or hide the menu
+            menuIcon.classList.toggle('active'); // Animate the menu icon
+        });
+    </script>
+  
+</body>
+</html>
